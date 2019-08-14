@@ -10,6 +10,7 @@ import junit.framework.TestResult;
 import junit.framework.TestSuite;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.objectweb.asmx.ClassReader;
 
@@ -357,6 +358,7 @@ public class AnnotationsTest {
    * Runs a test on index files for package-info.
    */
   @Test
+  @Ignore("Test uses @Deprecated which changed in Java 9, so test fails using Java 11")
   public void testiPackage() {
     testAgainstIndexFile(nameIndex("package-info.jaif"),
         nameClass("package-info.class"));
