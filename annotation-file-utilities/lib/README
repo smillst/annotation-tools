@@ -1,5 +1,2 @@
 javac.jar: https://bitbucket.org/eisop/jsr308-langtools
   hg clone https://bitbucket.org/eisop/jsr308-langtools; cd jsr308-langtools/cfmake; make; make clean;
-
-javac-jdk.jar: https://bitbucket.org/eisop/jsr308-langtools
-  hg clone https://bitbucket.org/eisop/jsr308-langtools; cd jsr308-langtools/cfmake; make; make clean;
