@@ -35,7 +35,8 @@ DEBUG :=
 default : all
 
 .PHONY: all
-all : $(DIFFS) abbreviated converted enum-imports ad-hoc issue155 system-test source-extension results
+all : $(DIFFS) abbreviated converted enum-imports ad-hoc issue155 source-extension results
+#all : $(DIFFS) abbreviated converted enum-imports ad-hoc issue155 system-test source-extension results
 
 .PHONY: abbreviated
 abbreviated:
